@@ -29,6 +29,7 @@ services:
       REDIS_URL: redis://redis:6379/0
       JWT_SECRET: ${JWT_SECRET:-oee-shifts-local-demo-change-before-production-2026}
       SEED_DEMO: "true"
+      MIGRATION_BATCH: ${MIGRATION_BATCH:-50}
     ports: ["${BACKEND_PORT:-19251}:8000"]
     volumes: ["report-files:/app/artifacts"]
     depends_on:

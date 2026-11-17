@@ -31,3 +31,8 @@ target/
 *.o
 *.obj
 .DS_Store
+# 本地测试与数据库产物
+*.db
+*.db-wal
+*.db-shm
+tests/.pytest_cache/
